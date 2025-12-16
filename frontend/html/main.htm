@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+body {
+background-color: rgb(253, 249, 255);
+font-family: Arial, Helvetica, sans-serif;
+font-size: larger;
+}
+
+header {
+background-color: rgb(183, 0, 255);
+position: static;
+
+}
+
+
+
+nav {
+padding: 10px 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: -46px;
+margin-left: 330px;
+}
+
+a.svo {
+color: #ffffff;
+padding: 10px 20px;
+width: 100px;
+text-decoration: none;
+margin-top: -45px;
+text-align: center;
+display: block;
+background-image: linear-gradient(to left, transparent, transparent 50%, #000000 50%, #000000);
+background-position: 100% 0;
+background-size: 200% 100%;
+transition: all .25s ease-in;
+font: 400 18px tahoma;
+border: 1px solid #000000;
+}
+
+a.svo:hover {
+background-position: 0 0;
+color: #fff;
+}
+
+
+
+.wrp1 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 100px;
+margin-top: 100px;
+}
+
+.wrp2 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 500px;
+margin-top: -263px;
+}
+
+.wrp3 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 100px;
+margin-top: 100px;
+}
+
+.wrp4 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 500px;
+margin-top: -263px;
+}
+
+.wrp5 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 100px;
+margin-top: 100px;
+}
+
+.wrp6 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 500px;
+margin-top: -265px;
+}
+
+.wrp7 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 100px;
+margin-top: 100px;
+}
+
+.wrp8 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 500px;
+margin-top: -265px;
+}
+
+.wrp9 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 100px;
+margin-top: 100px;
+}
+
+.wrp10 {
+background-size: cover;
+overflow: hidden;
+border: 2px solid black;
+padding: 20px;
+margin-bottom: 20px;
+width: 300px;
+height: 200px;
+margin-left: 500px;
+margin-top: -265px;
+}
+
+.vsy {
+margin-left: 350px;
+}
+
+#side-checkbox {
+display: none;
+}
+.side-panel {
+position: fixed;
+z-index: 999999;
+top: 0;
+left: -360px;
+background: #9e00fa;
+transition: all 0.5s;
+width: 320px;
+height: 100vh;
+box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+color: #FFF;
+padding: 40px 20px;
+}
+.side-title {
+font-size: 20px;
+padding-bottom: 10px;
+margin-bottom: 20px;
+border-bottom: 2px solid #BFE2FF;
+}
+
+.side-button-1-wr {
+margin-top: -1740px;
+margin-left: -350px;
+}
+.side-button-1 {
+display: inline-block;
+}
+.side-button-1 .side-b {
+margin: 10px;
+text-decoration: none;
+position: relative;
+font-size: 20px;
+line-height: 20px;
+padding: 12px 30px;
+color: #FFF;
+font-weight: bold;
+text-transform: uppercase;
+font-family: 'Roboto', Тahoma, sans-serif;
+background: #f700ad;
+cursor: pointer;
+border: 2px solid #fd00c6;
+}
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+color: #FFF;
+}
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+position: absolute;
+height: 4px;
+left: 50%;
+bottom: -6px;
+content: "";
+transition: all 280ms ease-in-out;
+width: 0;
+}
+.side-button-1 .side-open:after,
+.side-button-1 .side-open:before {
+background: rgb(3, 0, 0);
+}
+.side-button-1 .side-close:after,
+.side-button-1 .side-close:before {
+background: red;
+}
+.side-button-1 .side-b:before {
+top: -6px;
+}
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+width: 100%;
+left: 0;
+}
+
+.side-button-1 .side-close {
+display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+display: block;
+}
+#side-checkbox:checked + .side-panel {
+left: 0;
+}
+
+.side-button-2 {
+font-size: 30px;
+border-radius: 20px;
+position: absolute;
+z-index: 1;
+top: 8px;
+right: 8px;
+cursor: pointer;
+transform: rotate(45deg);
+color: #fa01bc;
+transition: all 280ms ease-in-out;
+}
+.side-button-2:hover {
+transform: rotate(45deg) scale(1.1);
+color: #FFF;
+}
+
+</style>
+
+</head>
+
+
+<body>
+<header>
+<logo>
+<img src="https://sun9-28.userapi.com/impf/Gq8rTjGgHHtvCZUeQPSGVVYBXPN6eMhv3FYjDw/eGQKgjWlY9c.jpg?size=1920x768&quality=95&crop=22,393,1234,493&sign=572ab2dbad882012b3c6f73d13fd3a10&type=cover_group"
+width="250px" height="100px">
+</logo>
+
+<nav>
+<a href=" " class="svo">Главная</a>
+<a href=" " class="svo">Наши продукты</a>
+<a href=" " class="svo">Контакты</a>
+<a href=" " class="svo">Работа у нас</a>
+<a href=" " class="svo">Промокоды</a>
+<a href=" " class="svo">Login</a>
+</nav>
+</header>
+<div class="vsy">
+<div class="wrp1" <span>
+Первый продукт
+</span>
+</div>
+
+<div class="wrp2" <span>
+Второй продукт
+</span>
+</div>
+<div class="wrp3" <span>
+Третий продукт
+</span>
+</div>
+<div class="wrp4" <span>
+Четвертый продукт
+</span>
+</div>
+<div class="wrp5" <span>
+Пятый продукт
+</span>
+</div>
+<div class="wrp6" <span>
+Шестой продукт
+</span>
+</div>
+<div class="wrp7" <span>
+Cедьмой продукт
+    </span>
+    </div>
+<div class="wrp8" <span>
+    Восьмой продукт
+     </span>
+     </div>
+<div class="wrp9" <span>
+    Девятый продукт
+    </span>
+     </div>
+<div class="wrp10" <span>
+        Десятый продукт
+     </span>
+
+     <input type="checkbox" id="side-checkbox" />
+     <div class="side-panel">
+     <label class="side-button-2" for="side-checkbox">+</label>
+     <div class="side-title">Фильтры:</div>
+     <p>Цена:</p>
+     </div>
+     <div class="side-button-1-wr">
+     <label class="side-button-1" for="side-checkbox">
+     <div class="side-b side-open">Открыть</div>
+     <div class="side-b side-close">Закрыть</div>
+     </label>
+     </div>
+
+     </div>
+     <input type="checkbox" id="side-checkbox" />
+<div class="side-panel">
+<label class="side-button-2" for="side-checkbox">+</label>
+<div class="side-title">Фильтры:</div>
+<p>Цена:</p>
+</div>
+<div class="side-button-1-wr">
+<label class="side-button-1" for="side-checkbox">
+<div class="side-b side-open">Открыть</div>
+<div class="side-b side-close">Закрыть</div>
+</label>
+</div>

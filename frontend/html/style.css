@@ -1,0 +1,304 @@
+body {
+    background-color: rgb(253, 249, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-image: url('16.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    header {
+    background-color: rgb(20, 32, 202);
+    position: static;
+    
+    }
+    footer{
+        background-color:rgb(20, 32, 202) ;
+        position: relative;
+        
+        
+    }
+    
+    
+    
+    
+    nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -46px;
+    margin-left: 250px;
+    color:white;
+    }
+    nav1 {
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 46px;
+    margin-left: -250px;
+        color:white;
+        }
+        .filtri {
+            width: 17%;
+            height: 100%;
+            padding: 1em;
+            text-align: center;
+            padding: 0 20px;
+            
+            }
+            
+            .filtri button.knopka {
+            width: 130px;
+            font-size: 20px;
+            margin: 0.5em;
+            border-radius: 20px;
+            background-color: blue;
+            border: 2px solid white;
+            
+            color: white;
+            
+            transition: 0.5s;
+            background-position: 100% 0;
+            background-size: 200% 200%;
+            padding: 10px 20px;
+            }
+            
+            
+            
+            .filter {
+            max-height: 0;
+            transition: max-height 0.2s ease-out;
+            background-color: rgb(0, 0, 255);
+            border-radius: 20px;
+            
+            overflow-y: hidden;
+            
+            }
+            
+            .filter h2 {
+            color: white;
+            }
+            
+            .filter p {
+            font-size: 20px;
+            color: white;
+            font-family: monospace;
+            
+            }
+            
+            .filter input {
+            margin: 0.2em;
+            height: 23px;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px solid blue;
+            background-color: white;
+            color: blue;
+            font-size: 17px;
+            }
+            
+            .filter button {
+            width: 120px;
+            font-size: 20px;
+            background-image: none;
+            background-color: white;
+            margin: 0.5em;
+            border-radius: 10px;
+            border: 1px solid white;
+            color: blue;
+            }
+            
+            .filter label {
+            font-size: 25px;
+            color: white;
+            
+            }
+            
+            .filter label input {
+            width: 16px;
+            }
+            
+            .calendar p {
+            text-align: center;
+            }
+            
+            .calendar input {
+            width: 175px;
+            }
+            .filtri {
+            width: 100%;
+            height: 100%;
+            
+            padding: 0;
+            }
+            
+            .filtri button.knopka {
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+            padding: 0;
+            }
+            .filtri {
+                width: 100%;
+                height: 100%;
+                
+                padding: 0;
+                }
+                
+                .filtri button.knopka {
+                width: 100px;
+                height: 30px;
+                font-size: 15px;
+                padding: 0;
+                }
+                
+    a.ani{
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #1267b6;
+        transition: background-color 0.3s ease-in-out;
+    }
+    a.ani:hover {
+        background-color: #124ac2;
+    }
+    
+    .text{
+        color:white
+    }
+    
+   
+    
+    
+    
+    .wrp1 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    }
+    
+    .wrp2 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid rgb(13, 94, 245);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: -263px;
+    }
+    
+    .wrp3 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid  rgb(13, 94, 245);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    }
+    
+    .wrp4 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: -263px;
+    }
+    
+    .wrp5 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    }
+    
+    .wrp6 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid rgb(13, 94, 245);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: -265px;
+    }
+    
+    .wrp7 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid rgb(13, 94, 245);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    }
+    
+    .wrp8 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: -265px;
+    }
+    
+    .wrp9 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px;
+    }
+    
+    .wrp10 {
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid rgb(13, 94, 245);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: -265px;
+    }
+    
+    
+    
+    
+    
+    

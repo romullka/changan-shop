@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Document</title>
+
+
+</head>
+
+
+<body>
+<header>
+<logo>
+<img src="./1.jpg" width="150px" height="125px">
+</logo>
+
+<nav>
+<a href="./1.html " class="ani">Главная</a>
+<a href="./12.html " class="ani">Галерея авто</a>
+<a href="./13.html" class="ani">Контакты</a>
+<a href="./14.html " class="ani">Работа у нас</a>
+
+<a href="./registration.html" class="ani">Login</a>
+</nav>
+</header>
+<div class="filtri">
+
+    <button class="knopka">Фильтры</button>
+    
+    <div class="filter">
+    
+    <div>
+    <h2>Цена</h2>
+    <p>От <input type="number" value="0"></p>
+    <p>До <input type="number" value="0"></p>
+    <button type="button"><b>Выбрать</b></button>
+    </div>
+    
+    <div>
+    
+    </div>
+    
+    <div class="vnali">
+    <label>
+    <input type="checkbox">
+    В наличии
+    </label>
+    </div>
+    
+    <div class="calendar">
+    <p><input type="date" name="calendar" value="2024-01-01" min="2023-01-01" max="2025-01-01">
+    <input type="submit" value= "Отправить"></p>
+    </div>
+    </div>
+    
+    </div>
+<div class="p1">
+<div class="wrp1" <span>
+<img src="./2.jpg">
+<a href="./2.html">Абсорбер топливный Changan </a>
+</span>
+</div>
+
+<div class="wrp2" <span>
+    <img src="./3.jpg">
+   <a href="./3.html">Амортизатор задний</a>
+</span>
+</div>
+<div class="wrp3" <span>
+    <img src="./4.jpg">
+   <a href="./4.html"> Амортизатор передний левый</a>
+</span>
+</div>
+<div class="wrp4" <span>
+    <img src="./5.jpg" width="200px" height=150px>
+    <a href="./5.html">Бак топливный</a>
+</span>
+</div>
+<div class="wrp5" <span>
+    <img src="./6.png">
+   <a href="./6.html"> Бампер задний</a>
+</span>
+</div>
+<div class="wrp6" <span>
+    <a href="./7.html"> Бампер передний</a>
+    <img src="./7.jpg">
+</span>
+</div>
+<div class="wrp7" <span>
+    <img src="./8.png">
+    <a href="./8.html"> Бачок омывателя в сборе</a>
+    </span>
+    </div>
+<div class="wrp8" <span>
+    <img src="./9.jpg">
+    <a href="./9.html"> Бачок расширительный</a>
+     </span>
+     </div>
+<div class="wrp9" <span>
+    <img src="./10.jpg">
+    <a href="./10.html">Блок кнопок салона</a>
+    </span>
+     </div>
+<div class="wrp10" <span>
+    <img src="./11.jpg">
+    <a href="./11.html">Датчик давления масла</a>
+     </span>
+     </div>
+     <footer>
+        <logo>
+            <img src="./1.jpg" width="150px" height="125px">
+            </logo>
+            
+            <nav>
+                <a href="./1.html " class="ani">Главная</a>
+                <a href=" " class="ani">Галерея авто</a>
+                <a href=" " class="ani">Контакты</a>
+                <a href=" " class="ani">Работа у нас</a>
+                
+                <a href=" " class="ani">Login</a>
+            </nav>
+     </footer>
+     
+        <script>
+            let coll = document.getElementsByClassName('knopka');
+            for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+            let filter=this.nextElementSibling;
+            if (filter.style.maxHeight) {
+            filter.style.maxHeight=null;
+            } else {
+            filter.style.maxHeight=filter.scrollHeight + 'px';
+            }
+            })
+            }
+            </script>
+    
+</body>
+
+</html>
